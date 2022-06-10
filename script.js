@@ -85,7 +85,8 @@ const handleLineClick = (e) => {
 		selectedLines = [ ...selectedLines, lineId ];
 
 		colorLine(selectedLine);
-		// we must check for everytime one line is being selected that if they are making a square or not
+
+		// we must check for everytime one line is being selected and colored that if they are making a square or not
 
 		const boxes = document.querySelectorAll('.box');
 		const boxesCheck = [];

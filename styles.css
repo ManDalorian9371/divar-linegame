@@ -55,3 +55,13 @@ section {
 .box {
 	width: 100%;
 }
+@media screen and (max-width: 400px) {
+	.game-grid-container {
+		display: grid;
+		grid-template-columns: 5% 25% 5% 25% 5% 25% 5%;
+		grid-template-rows: 5% 25% 5% 25% 5% 25% 5%;
+		width: 200px;
+		height: 200px;
+		margin: 100px auto;
+	}
+}
