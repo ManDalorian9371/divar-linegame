@@ -73,6 +73,7 @@ const handleLineClick = (e) => {
 		return;
 	}
 	if (endGame < 9) {
+		let turnCheck = endGame;
 		const lineId = e.target.id;
 
 		const selectedLine = document.getElementById(lineId);
@@ -117,9 +118,11 @@ const handleLineClick = (e) => {
 					blueScore++;
 				}
 				endGame++;
-				changeTurn();
 			}
 		});
+		if (turnCheck < endGame) {
+			changeTurn();
+		}
 	}
 	//when maximum number of boxes are colored we stop changing turn  and will show the victorious player
 	if (endGame == 9) {
